@@ -803,8 +803,9 @@ if (birthdayConfig.timelineClosing?.image) {
 birthdayConfig.ourLittleForever.dreams.forEach(dream => {
   if (dream.illustrationImage) dream.illustrationImage = resolveAssetUrl(dream.illustrationImage);
 });
-if (birthdayConfig.ourLittleForever.closingMessage?.image) {
-  birthdayConfig.ourLittleForever.closingMessage.image = resolveAssetUrl(birthdayConfig.ourLittleForever.closingMessage.image) || '';
+if (birthdayConfig.ourLittleForever.ourForever.image) {
+  birthdayConfig.ourLittleForever.ourForever.image =
+    resolveAssetUrl(birthdayConfig.ourLittleForever.ourForever.image) || '';
 }
 birthdayConfig.scrapbookItems.forEach(item => {
   if (item.photoUrl) item.photoUrl = resolveAssetUrl(item.photoUrl);
