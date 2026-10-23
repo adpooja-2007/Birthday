@@ -21,14 +21,14 @@ export const CoupleCaricature: React.FC<CoupleCaricatureProps> = ({
   const { caricature } = birthdayConfig;
 
   // Resolve artwork path based on mode
-  let imageSrc = '/images/our-caricature.svg';
+  let imageSrc = `${import.meta.env.BASE_URL}images/our-caricature.svg`;
   let altText = 'Illustrated caricature of us together';
 
   if (caricature.mode === 'solo') {
-    imageSrc = '/images/solo-caricature.svg';
+    imageSrc = `${import.meta.env.BASE_URL}images/solo-caricature.svg`;
     altText = 'Illustrated caricature of birthday boy';
   } else if (caricature.mode === 'placeholder') {
-    imageSrc = '/images/placeholder-caricature.svg';
+    imageSrc = `${import.meta.env.BASE_URL}images/placeholder-caricature.svg`;
     altText = 'Personalized caricature placeholder';
   } else if (caricature.mode === 'custom' && caricature.customImagePath) {
     imageSrc = caricature.customImagePath;

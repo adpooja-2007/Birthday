@@ -171,7 +171,7 @@ export const FinalLetter: React.FC<FinalLetterProps> = ({ onReplay }) => {
             }}
           >
             <img
-              src="/images/our-forever.png"
+              src={`${import.meta.env.BASE_URL}images/our-forever.png`}
               alt="Pooja and Barath forever beach sunset kiss"
               style={{
                 width: '100%',

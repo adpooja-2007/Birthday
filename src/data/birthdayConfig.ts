@@ -781,3 +781,35 @@ export const birthdayConfig: BirthdayConfig = {
     audioSrc: "/audio/lover.mp3"
   }
 };
+
+// Automatically prefix assets with Vite BASE_URL (e.g. /Birthday/ for GitHub Pages)
+const baseUrl = import.meta.env.BASE_URL || '/';
+const resolveAssetUrl = (path?: string) => {
+  if (!path) return path;
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) return path;
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${baseUrl}${cleanPath}`;
+};
+
+if (birthdayConfig.caricature.customImagePath) {
+  birthdayConfig.caricature.customImagePath = resolveAssetUrl(birthdayConfig.caricature.customImagePath) || '';
+}
+birthdayConfig.timeline.forEach(item => {
+  if (item.photoUrl) item.photoUrl = resolveAssetUrl(item.photoUrl);
+});
+if (birthdayConfig.timelineClosing?.image) {
+  birthdayConfig.timelineClosing.image = resolveAssetUrl(birthdayConfig.timelineClosing.image) || '';
+}
+birthdayConfig.ourLittleForever.dreams.forEach(dream => {
+  if (dream.illustrationImage) dream.illustrationImage = resolveAssetUrl(dream.illustrationImage);
+});
+if (birthdayConfig.ourLittleForever.closingMessage?.image) {
+  birthdayConfig.ourLittleForever.closingMessage.image = resolveAssetUrl(birthdayConfig.ourLittleForever.closingMessage.image) || '';
+}
+birthdayConfig.scrapbookItems.forEach(item => {
+  if (item.photoUrl) item.photoUrl = resolveAssetUrl(item.photoUrl);
+});
+if (birthdayConfig.music.audioSrc) {
+  birthdayConfig.music.audioSrc = resolveAssetUrl(birthdayConfig.music.audioSrc) || '';
+}
+
