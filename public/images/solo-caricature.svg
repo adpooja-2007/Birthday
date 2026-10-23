@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="soloGlow" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF9" />
+      <stop offset="60%" stop-color="#FDF0E6" />
+      <stop offset="100%" stop-color="#F5DBCE" />
+    </radialGradient>
+    <linearGradient id="sweaterBoySolo" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#5C3D5A" />
+      <stop offset="50%" stop-color="#493447" />
+      <stop offset="100%" stop-color="#362235" />
+    </linearGradient>
+    <linearGradient id="hairBoySolo" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#5C3A21" />
+      <stop offset="50%" stop-color="#422817" />
+      <stop offset="100%" stop-color="#2E1A0E" />
+    </linearGradient>
+    <radialGradient id="blushSolo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF8A9E" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#FF8A9E" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="goldCrown" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF0BA" />
+      <stop offset="50%" stop-color="#E8C987" />
+      <stop offset="100%" stop-color="#CFA451" />
+    </linearGradient>
+    <filter id="softShadowSolo" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#493447" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Outer Circle Frame -->
+  <g filter="url(#softShadowSolo)">
+    <circle cx="300" cy="300" r="265" fill="url(#soloGlow)" stroke="#F5C6D0" stroke-width="4" />
+    <circle cx="300" cy="300" r="255" fill="none" stroke="#E8C987" stroke-width="1.5" stroke-dasharray="6 5" />
+  </g>
+
+  <!-- Celebratory Confetti & Stars -->
+  <g opacity="0.85">
+    <!-- Golden Stars -->
+    <path d="M140 130 L143 140 L153 143 L143 146 L140 156 L137 146 L127 143 L137 140 Z" fill="url(#goldCrown)" />
+    <path d="M460 130 L463 140 L473 143 L463 146 L460 156 L457 146 L447 143 L457 140 Z" fill="url(#goldCrown)" />
+    <circle cx="160" cy="90" r="3" fill="#E8C987" />
+    <circle cx="440" cy="95" r="3" fill="#E8C987" />
+    <circle cx="120" cy="220" r="2.5" fill="#E8C987" />
+    <circle cx="480" cy="210" r="2.5" fill="#E8C987" />
+    <!-- Floating pastel confetti ribbons -->
+    <path d="M125 180 Q135 195 120 210" stroke="#F5C6D0" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M475 180 Q465 195 480 210" stroke="#C77D91" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M200 95 Q210 105 205 115" stroke="#E8C987" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M395 95 Q385 105 390 115" stroke="#DCD6F7" stroke-width="3" stroke-linecap="round" fill="none" />
+    <!-- Floating hearts -->
+    <path d="M185 150 C180 143 170 145 170 152 C170 160 185 170 185 170 C185 170 200 160 200 152 C200 145 190 143 185 150 Z" fill="#F5C6D0" />
+    <path d="M415 150 C410 143 400 145 400 152 C400 160 415 170 415 170 C415 170 430 160 430 152 C430 145 420 143 415 150 Z" fill="#E896A9" />
+  </g>
+
+  <!-- Character Body / Knit Plum Sweater -->
+  <g id="boySolo">
+    <!-- Torso -->
+    <path d="M200 375 C200 330 240 315 300 315 C360 315 400 330 400 375 L415 480 C415 485 185 485 185 480 Z" fill="url(#sweaterBoySolo)" />
+    <!-- Knit texture lines -->
+    <path d="M260 355 Q262 410 260 470" stroke="#362235" stroke-width="2.5" stroke-dasharray="4 6" fill="none" opacity="0.4" />
+    <path d="M300 350 Q300 410 300 470" stroke="#362235" stroke-width="2.5" stroke-dasharray="4 6" fill="none" opacity="0.4" />
+    <path d="M340 355 Q338 410 340 470" stroke="#362235" stroke-width="2.5" stroke-dasharray="4 6" fill="none" opacity="0.4" />
+    <!-- Turtleneck Collar -->
+    <path d="M260 318 C260 306 340 306 340 318 L334 338 C334 344 266 344 266 338 Z" fill="#5C3D5A" stroke="#362235" stroke-width="1.5" />
+
+    <!-- Left & Right arms holding cupcake -->
+    <path d="M205 375 C190 410 215 445 255 450 C265 440 255 410 240 385 Z" fill="#493447" />
+    <path d="M395 375 C410 410 385 445 345 450 C335 440 345 410 360 385 Z" fill="#493447" />
+
+    <!-- Neck -->
+    <path d="M282 280 L318 280 L318 318 L282 318 Z" fill="#F7D3BC" />
+
+    <!-- Head -->
+    <ellipse cx="300" cy="245" rx="52" ry="58" fill="#FDE2D0" />
+    <!-- Ears -->
+    <ellipse cx="245" cy="248" rx="9" ry="14" fill="#F7D3BC" />
+    <ellipse cx="355" cy="248" rx="9" ry="14" fill="#F7D3BC" />
+
+    <!-- Hair -->
+    <path d="M245 235 C238 190 258 160 300 160 C345 160 365 190 358 235 C348 218 335 212 320 215 C302 218 290 212 280 215 C262 220 254 228 245 235 Z" fill="url(#hairBoySolo)" />
+    <!-- Fluffy locks -->
+    <path d="M265 178 C278 165 308 165 325 172 C316 177 298 174 286 184 Z" fill="#6A462B" />
+    <path d="M255 210 C260 222 275 222 285 215 C272 213 264 209 255 210 Z" fill="#422817" />
+    <path d="M290 212 C302 225 320 222 330 212 C318 215 306 211 290 212 Z" fill="#422817" />
+
+    <!-- Playful Golden Birthday Crown -->
+    <g transform="translate(300, 150) rotate(-8)">
+      <path d="M-35 8 L-38 -20 L-18 -8 L0 -26 L18 -8 L38 -20 L35 8 Z" fill="url(#goldCrown)" stroke="#CFA451" stroke-width="1.5" />
+      <circle cx="-38" cy="-20" r="3.5" fill="#E896A9" />
+      <circle cx="0" cy="-26" r="4.5" fill="#C77D91" />
+      <circle cx="38" cy="-20" r="3.5" fill="#E896A9" />
+      <circle cx="-18" cy="0" r="2" fill="#FFFFFF" />
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF" />
+      <circle cx="18" cy="0" r="2" fill="#FFFFFF" />
+    </g>
+
+    <!-- Eyebrows -->
+    <path d="M270 225 Q282 220 292 225" stroke="#3D2517" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M308 225 Q318 220 330 225" stroke="#3D2517" stroke-width="3" stroke-linecap="round" fill="none" />
+    <!-- Eyes -->
+    <path d="M272 242 C276 236 288 236 292 242" stroke="#2E1A0E" stroke-width="3.2" stroke-linecap="round" fill="none" />
+    <path d="M308 242 C312 236 324 236 328 242" stroke="#2E1A0E" stroke-width="3.2" stroke-linecap="round" fill="none" />
+    <!-- Cheeks Blush -->
+    <ellipse cx="272" cy="256" rx="14" ry="8" fill="url(#blushSolo)" />
+    <ellipse cx="328" cy="256" rx="14" ry="8" fill="url(#blushSolo)" />
+    <!-- Nose -->
+    <path d="M300 248 Q303 255 298 258" stroke="#DDA88E" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <!-- Big Happy Smile -->
+    <path d="M288 270 Q300 282 312 270" stroke="#A84C58" stroke-width="3" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Cupcake with Birthday Candle held in hands -->
+  <g transform="translate(300, 440)">
+    <!-- Hands -->
+    <ellipse cx="-22" cy="0" rx="9" ry="8" fill="#FDE2D0" />
+    <ellipse cx="22" cy="0" rx="9" ry="8" fill="#FDE2D0" />
+    <!-- Cupcake wrapper -->
+    <path d="M-18 6 L-13 32 L13 32 L18 6 Z" fill="#E8C987" stroke="#CFA451" stroke-width="1.5" />
+    <!-- Pink Frosting swirls -->
+    <path d="M-22 6 C-24 -4 -6 -8 -4 -6 C-2 -12 16 -12 18 -4 C24 -2 24 8 18 8 Z" fill="#F5C6D0" stroke="#C77D91" stroke-width="1.5" />
+    <circle cx="-6" cy="-2" r="2" fill="#E896A9" />
+    <circle cx="8" cy="2" r="2" fill="#C77D91" />
+    <circle cx="2" cy="-5" r="2" fill="#E8C987" />
+    <!-- Golden Candle -->
+    <rect x="-2.5" y="-22" width="5" height="16" rx="1.5" fill="#DCD6F7" stroke="#493447" stroke-width="1" />
+    <!-- Flickering Flame -->
+    <path d="M0 -34 C-4 -28 -3 -24 0 -22 C3 -24 4 -28 0 -34 Z" fill="#FFC93C" />
+    <circle cx="0" cy="-26" r="2" fill="#FFFFFF" />
+  </g>
+
+  <!-- Bottom Handwritten Badge -->
+  <g transform="translate(300, 525)">
+    <rect x="-140" y="-15" width="280" height="30" rx="15" fill="#FFFDF9" stroke="#E8C987" stroke-width="1.5" />
+    <text x="0" y="5" font-family="'Caveat', cursive, sans-serif" font-size="20" font-weight="700" fill="#493447" text-anchor="middle">
+      birthday boy &bull; my favorite human &hearts;
+    </text>
+  </g>
+</svg>

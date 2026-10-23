@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="favGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5C6D0" />
+      <stop offset="100%" stop-color="#C77D91" />
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#FFF8F0" />
+  <circle cx="32" cy="32" r="26" fill="#FCECEF" stroke="#E8C987" stroke-width="2" stroke-dasharray="3 3"/>
+  <!-- Heart -->
+  <path d="M32 46 C20 36 14 28 14 20 C14 13 19 9 25 9 C28.5 9 31.5 11 32 13 C32.5 11 35.5 9 39 9 C45 9 50 13 50 20 C50 28 44 36 32 46 Z" fill="url(#favGlow)" />
+  <!-- Sparkle -->
+  <path d="M48 10 L50 14 L54 16 L50 18 L48 22 L46 18 L42 16 L46 14 Z" fill="#E8C987" />
+</svg>

@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="iceBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="60%" stop-color="#F2EEFB"/>
+      <stop offset="100%" stop-color="#E5DCF7"/>
+    </radialGradient>
+    <linearGradient id="umbrellaG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F5C6D0"/>
+      <stop offset="100%" stop-color="#C77D91"/>
+    </linearGradient>
+    <linearGradient id="strawGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB6C1"/>
+      <stop offset="100%" stop-color="#FF7FA5"/>
+    </linearGradient>
+    <linearGradient id="chocoGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A0522D"/>
+      <stop offset="100%" stop-color="#7B3F00"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#493447" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <g filter="url(#shadow)">
+    <circle cx="250" cy="250" r="235" fill="url(#iceBg)" stroke="#DCD6F7" stroke-width="3"/>
+    <circle cx="250" cy="250" r="225" fill="none" stroke="#E8C987" stroke-width="1.5" stroke-dasharray="6 5"/>
+  </g>
+
+  <!-- Raindrops -->
+  <g stroke="#AFA6E0" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <line x1="80" y1="50" x2="68" y2="82"/>
+    <line x1="140" y1="60" x2="128" y2="92"/>
+    <line x1="380" y1="55" x2="368" y2="87"/>
+    <line x1="440" y1="80" x2="428" y2="112"/>
+    <line x1="60" y1="160" x2="48" y2="192"/>
+    <line x1="450" y1="180" x2="438" y2="212"/>
+    <line x1="90" y1="310" x2="78" y2="342"/>
+    <line x1="420" y1="320" x2="408" y2="352"/>
+    <line x1="170" y1="420" x2="158" y2="452"/>
+    <line x1="340" y1="430" x2="328" y2="462"/>
+  </g>
+
+  <!-- Ground puddle -->
+  <ellipse cx="250" cy="430" rx="180" ry="22" fill="#DCD6F7" opacity="0.4"/>
+
+  <!-- Scooter (background right) -->
+  <g transform="translate(345,330)" opacity="0.8">
+    <path d="M-45 55 C-45 28 12 22 42 48 L37 75 L-38 75 Z" fill="#493447"/>
+    <line x1="-40" y1="48" x2="-56" y2="16" stroke="#2F1E2E" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="-62" y1="16" x2="-46" y2="16" stroke="#E8C987" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="-50" cy="22" r="6" fill="#FFEAA7"/>
+    <circle cx="-42" cy="77" r="17" fill="#2F1E2E" stroke="#E8C987" stroke-width="2.5"/>
+    <circle cx="30" cy="77" r="17" fill="#2F1E2E" stroke="#E8C987" stroke-width="2.5"/>
+    <circle cx="-42" cy="77" r="6" fill="#FAF2E9"/>
+    <circle cx="30" cy="77" r="6" fill="#FAF2E9"/>
+    <!-- Two helmets on seat -->
+    <path d="M-12 26 C-12 10 8 10 8 26 Z" fill="#F5C6D0" stroke="#C77D91" stroke-width="2"/>
+    <path d="M12 26 C12 10 32 10 32 26 Z" fill="#DCD6F7" stroke="#493447" stroke-width="2"/>
+  </g>
+
+  <!-- Big Romantic Umbrella -->
+  <g filter="url(#shadow)">
+    <path d="M120 190 C120 100 380 100 380 190 C340 178 300 183 250 190 C200 183 160 178 120 190 Z" fill="url(#umbrellaG)" stroke="#A85C70" stroke-width="2.5"/>
+    <path d="M250 108 Q205 148 182 186" stroke="#FFFFFF" stroke-width="2" opacity="0.5" fill="none"/>
+    <path d="M250 108 Q295 148 318 186" stroke="#FFFFFF" stroke-width="2" opacity="0.5" fill="none"/>
+    <line x1="250" y1="108" x2="250" y2="92" stroke="#493447" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="250" y1="190" x2="250" y2="295" stroke="#493447" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- ======= BARATH (left) ======= -->
+  <!-- Body - dark shirt -->
+  <path d="M142 335 C142 290 175 275 215 275 C232 275 246 282 254 298 L254 440 C254 445 136 445 136 440 Z" fill="#3D2B3B"/>
+  <path d="M190 277 L215 305 L240 277" stroke="#FAF2E9" stroke-width="2.5" fill="none"/>
+  <!-- Neck -->
+  <rect x="207" y="258" width="16" height="22" rx="6" fill="#E8B89A"/>
+  <!-- Head -->
+  <ellipse cx="218" cy="225" rx="38" ry="42" fill="#E8B89A"/>
+  <ellipse cx="180" cy="228" rx="7" ry="11" fill="#DDA47E"/>
+  <!-- Dark hair with volume -->
+  <path d="M180 214 C178 172 200 152 230 152 C262 152 270 178 266 213 C258 196 244 191 230 194 C215 197 205 192 195 204 Z" fill="#1C1008"/>
+  <path d="M202 167 C214 158 240 158 255 164 C246 170 232 168 220 176 Z" fill="#2D1A0E"/>
+  <!-- Glasses -->
+  <rect x="196" y="212" width="23" height="17" rx="4.5" fill="rgba(255,255,255,0.12)" stroke="#1C1008" stroke-width="3"/>
+  <rect x="225" y="212" width="23" height="17" rx="4.5" fill="rgba(255,255,255,0.12)" stroke="#1C1008" stroke-width="3"/>
+  <line x1="219" y1="220.5" x2="225" y2="220.5" stroke="#1C1008" stroke-width="3"/>
+  <line x1="190" y1="219" x2="196" y2="219" stroke="#1C1008" stroke-width="3"/>
+  <!-- Eyes behind glasses -->
+  <circle cx="207.5" cy="221" r="3" fill="#1C1008"/>
+  <circle cx="236.5" cy="221" r="3" fill="#1C1008"/>
+  <circle cx="209" cy="219.5" r="1" fill="white"/>
+  <circle cx="238" cy="219.5" r="1" fill="white"/>
+  <!-- Light beard -->
+  <path d="M196 240 C196 255 205 262 218 264 C231 262 240 255 240 240 C236 244 228 247 218 248 C208 247 200 244 196 240 Z" fill="#2D1A0E" opacity="0.7"/>
+  <!-- Nose -->
+  <ellipse cx="218" cy="235" rx="4" ry="5" fill="#D49878"/>
+  <!-- Smile -->
+  <path d="M207 246 Q218 255 229 246" stroke="#A0614A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Rosy cheeks -->
+  <ellipse cx="200" cy="242" rx="9" ry="6" fill="#E8A0A0" opacity="0.45"/>
+  <ellipse cx="236" cy="242" rx="9" ry="6" fill="#E8A0A0" opacity="0.45"/>
+  <!-- Left arm holding ice cream -->
+  <path d="M140 380 L154 330 L168 330 L160 380 Z" fill="#3D2B3B"/>
+  <!-- Ice cream (Barath's - chocolate) -->
+  <path d="M154 310 L148 340 L160 340 Z" fill="#E8C987" stroke="#C99E4B" stroke-width="2"/>
+  <circle cx="154" cy="298" r="16" fill="#7B3F00" stroke="#A0522D" stroke-width="2"/>
+  <circle cx="149" cy="292" r="5" fill="#A0622E"/>
+
+  <!-- ======= POOJA (right) ======= -->
+  <!-- Body - pink floral top -->
+  <path d="M256 340 C256 295 288 280 322 280 C338 280 350 287 358 302 L358 440 C358 445 248 445 248 440 Z" fill="#E896A9"/>
+  <path d="M300 282 L322 308 L344 282" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+  <!-- Floral details -->
+  <circle cx="278" cy="325" r="4" fill="#FFFDF9" opacity="0.6"/>
+  <circle cx="296" cy="355" r="3" fill="#FFFDF9" opacity="0.5"/>
+  <circle cx="318" cy="338" r="4" fill="#FFFDF9" opacity="0.6"/>
+  <!-- Neck -->
+  <rect x="314" y="260" width="16" height="22" rx="6" fill="#DDA47E"/>
+  <!-- Head -->
+  <ellipse cx="322" cy="225" rx="36" ry="40" fill="#DDA47E"/>
+  <ellipse cx="359" cy="229" rx="6" ry="10" fill="#CC9470"/>
+  <!-- Long wavy dark hair -->
+  <path d="M286 210 C283 165 300 145 322 145 C344 145 358 165 358 210 C352 194 340 190 330 193 C318 196 308 192 298 205 Z" fill="#120C08"/>
+  <!-- Long wavy hair sides and back -->
+  <path d="M286 210 C278 230 274 265 278 310 C284 308 288 290 292 270 C290 250 288 230 290 212 Z" fill="#120C08"/>
+  <path d="M358 210 C366 230 370 265 366 310 C360 308 356 290 352 270 C354 250 354 228 354 212 Z" fill="#120C08"/>
+  <!-- Hair waves (highlights) -->
+  <path d="M280 250 C283 260 280 272 283 282" stroke="#2D1A0E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M365 250 C362 260 365 272 362 282" stroke="#2D1A0E" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Silver stud earring -->
+  <circle cx="287" cy="232" r="4" fill="#FFFDF9" stroke="#C0C0C0" stroke-width="1.5"/>
+  <circle cx="357" cy="232" r="4" fill="#FFFDF9" stroke="#C0C0C0" stroke-width="1.5"/>
+  <!-- Eyes -->
+  <ellipse cx="310" cy="219" rx="7" ry="6" fill="white"/>
+  <circle cx="311" cy="220" r="4" fill="#1C1008"/>
+  <circle cx="312.5" cy="218.5" r="1.2" fill="white"/>
+  <ellipse cx="334" cy="219" rx="7" ry="6" fill="white"/>
+  <circle cx="335" cy="220" r="4" fill="#1C1008"/>
+  <circle cx="336.5" cy="218.5" r="1.2" fill="white"/>
+  <!-- Cute eyelashes -->
+  <path d="M305 215 Q307 212 309 215" stroke="#1C1008" stroke-width="1.5" fill="none"/>
+  <path d="M329 215 Q331 212 333 215" stroke="#1C1008" stroke-width="1.5" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="322" cy="232" rx="4" ry="4.5" fill="#CC9470"/>
+  <!-- Big happy smile -->
+  <path d="M309 244 Q322 256 335 244" stroke="#A05060" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Rosy cheeks (prominent) -->
+  <ellipse cx="300" cy="238" rx="12" ry="8" fill="#E8A0A0" opacity="0.5"/>
+  <ellipse cx="342" cy="238" rx="12" ry="8" fill="#E8A0A0" opacity="0.5"/>
+  <!-- Right arm holding strawberry ice cream -->
+  <path d="M356 360 L360 305 L372 305 L375 360 Z" fill="#E896A9"/>
+  <!-- Ice cream (Pooja's - strawberry) -->
+  <path d="M362 285 L356 315 L368 315 Z" fill="#E8C987" stroke="#C99E4B" stroke-width="2"/>
+  <circle cx="362" cy="272" r="16" fill="#FF6B8A" stroke="#E8597A" stroke-width="2"/>
+  <circle cx="357" cy="265" r="5" fill="#FF9DB0"/>
+
+  <!-- Heart between them -->
+  <path d="M240 210 C240 202 246 198 250 202 C254 198 260 202 260 210 C260 218 250 225 250 225 C250 225 240 218 240 210 Z" fill="#C77D91" opacity="0.9"/>
+  <!-- Sparkle -->
+  <path d="M175 155 L177 150 L179 155 L184 157 L179 159 L177 164 L175 159 L170 157 Z" fill="#E8C987"/>
+  <path d="M385 165 L387 160 L389 165 L394 167 L389 169 L387 174 L385 169 L380 167 Z" fill="#F5C6D0"/>
+  <!-- Caption ribbon -->
+  <rect x="138" y="458" width="224" height="28" rx="14" fill="#C77D91" opacity="0.85"/>
+  <text x="250" y="477" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#FFFDF9" font-style="italic">our silly ice-cream &amp; rain date ♡</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="frameGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF9" />
+      <stop offset="60%" stop-color="#FDF4ED" />
+      <stop offset="100%" stop-color="#F5E4DA" />
+    </radialGradient>
+    <filter id="shadowP" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#493447" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowP)">
+    <circle cx="300" cy="300" r="265" fill="url(#frameGrad)" stroke="#E8C987" stroke-width="3" stroke-dasharray="8 6" />
+  </g>
+
+  <!-- Cute Polaroid / Frame Mockup in Center -->
+  <g transform="translate(180, 130) rotate(-3)">
+    <rect x="0" y="0" width="240" height="290" rx="8" fill="#FFFFFF" stroke="#F5C6D0" stroke-width="2" />
+    <!-- Photo area -->
+    <rect x="15" y="15" width="210" height="210" rx="4" fill="#FBF6F0" />
+    
+    <!-- Stylized Silhouette of Couple under Moon -->
+    <path d="M120 70 A 25 25 0 0 0 145 95 A 25 25 0 0 1 120 70 Z" fill="#E8C987" opacity="0.6" />
+    
+    <!-- Silhouette outlines -->
+    <ellipse cx="95" cy="130" rx="22" ry="24" fill="#DCD6F7" />
+    <path d="M70 185 C70 155 85 150 100 150 C115 150 125 155 125 185 Z" fill="#493447" opacity="0.75" />
+    
+    <ellipse cx="140" cy="135" rx="20" ry="22" fill="#F5C6D0" />
+    <path d="M115 185 C115 158 128 154 140 154 C155 154 165 158 165 185 Z" fill="#C77D91" opacity="0.75" />
+    
+    <!-- Heart between them -->
+    <path d="M118 115 C114 110 106 112 106 118 C106 125 118 132 118 132 C118 132 130 125 130 118 C130 112 122 110 118 115 Z" fill="#C77D91" />
+    
+    <!-- Washi tape at top -->
+    <rect x="75" y="-12" width="90" height="24" rx="2" fill="#F5C6D0" opacity="0.85" transform="rotate(2 120 0)" />
+    
+    <!-- Caption -->
+    <text x="120" y="260" font-family="'Caveat', cursive, sans-serif" font-size="22" font-weight="700" fill="#493447" text-anchor="middle">
+      our story begins here ♡
+    </text>
+  </g>
+
+  <!-- Instruction Note -->
+  <g transform="translate(300, 485)">
+    <text x="0" y="0" font-family="'DM Sans', sans-serif" font-size="14" font-weight="500" fill="#C77D91" text-anchor="middle" letter-spacing="0.5">
+      PERSONALIZED CARICATURE PLACEHOLDER
+    </text>
+    <text x="0" y="22" font-family="'DM Sans', sans-serif" font-size="12" fill="#756172" text-anchor="middle">
+      Switch mode in birthdayConfig.ts or place your image at /images/our-caricature.png
+    </text>
+  </g>
+</svg>

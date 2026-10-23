@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="homeBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="60%" stop-color="#FFF0E8"/>
+      <stop offset="100%" stop-color="#FDE8D8"/>
+    </radialGradient>
+    <linearGradient id="sunsetSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="50%" stop-color="#FFC0CB"/>
+      <stop offset="100%" stop-color="#E8C987"/>
+    </linearGradient>
+    <filter id="homeShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="9" flood-color="#C77D91" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Main circle -->
+  <g filter="url(#homeShadow)">
+    <circle cx="250" cy="250" r="235" fill="url(#homeBg)" stroke="#E8C987" stroke-width="3"/>
+    <circle cx="250" cy="250" r="225" fill="none" stroke="#F5C6D0" stroke-width="1.5" stroke-dasharray="6 5"/>
+  </g>
+
+  <!-- Sunset sky gradient fill top half -->
+  <clipPath id="topHalf">
+    <circle cx="250" cy="250" r="233"/>
+  </clipPath>
+  <rect x="15" y="15" width="470" height="260" fill="url(#sunsetSky)" opacity="0.35" clip-path="url(#topHalf)"/>
+
+  <!-- Cute cottage home -->
+  <!-- Chimney -->
+  <rect x="330" y="155" width="26" height="55" rx="4" fill="#FAF2E9" stroke="#493447" stroke-width="2.5"/>
+  <!-- Smoke puffs with heart -->
+  <circle cx="343" cy="148" r="10" fill="#F5C6D0" opacity="0.7"/>
+  <circle cx="352" cy="136" r="8" fill="#F5C6D0" opacity="0.6"/>
+  <path d="M361 130 C361 125 364 122 367 125 C370 122 373 125 373 130 C373 135 367 138 367 138 S361 135 361 130 Z" fill="#C77D91" opacity="0.8"/>
+  <!-- Roof -->
+  <path d="M128 260 L250 148 L372 260 Z" fill="#C77D91" stroke="#A85C70" stroke-width="3"/>
+  <!-- Roof shingle detail -->
+  <path d="M152 246 L250 154 L348 246" fill="none" stroke="#E896A9" stroke-width="2" stroke-dasharray="6 6"/>
+  <!-- House body -->
+  <rect x="155" y="258" width="190" height="145" fill="#FFFDF9" stroke="#493447" stroke-width="2.5"/>
+  <!-- Door with heart window -->
+  <rect x="222" y="308" width="56" height="95" rx="28" fill="#E8C987" stroke="#493447" stroke-width="2.5"/>
+  <!-- Door knob -->
+  <circle cx="269" cy="358" r="4" fill="#C99E4B"/>
+  <!-- Door heart window -->
+  <path d="M242 325 C242 320 246 317 250 320 C254 317 258 320 258 325 C258 331 250 336 250 336 S242 331 242 325 Z" fill="#E896A9"/>
+  <!-- Windows with warm golden glow -->
+  <rect x="165" y="273" width="42" height="36" rx="5" fill="#FFEAA7" stroke="#C99E4B" stroke-width="2"/>
+  <line x1="186" y1="273" x2="186" y2="309" stroke="#C99E4B" stroke-width="1.5"/>
+  <line x1="165" y1="291" x2="207" y2="291" stroke="#C99E4B" stroke-width="1.5"/>
+  <rect x="293" y="273" width="42" height="36" rx="5" fill="#FFEAA7" stroke="#C99E4B" stroke-width="2"/>
+  <line x1="314" y1="273" x2="314" y2="309" stroke="#C99E4B" stroke-width="1.5"/>
+  <line x1="293" y1="291" x2="335" y2="291" stroke="#C99E4B" stroke-width="1.5"/>
+  <!-- Flower garden -->
+  <line x1="165" y1="420" x2="165" y2="403" stroke="#4A7C59" stroke-width="2.5"/>
+  <circle cx="165" cy="398" r="7" fill="#F5C6D0"/>
+  <line x1="185" y1="420" x2="185" y2="400" stroke="#4A7C59" stroke-width="2.5"/>
+  <circle cx="185" cy="394" r="8" fill="#E8C987"/>
+  <line x1="315" y1="420" x2="315" y2="403" stroke="#4A7C59" stroke-width="2.5"/>
+  <circle cx="315" cy="398" r="7" fill="#E896A9"/>
+  <line x1="335" y1="420" x2="335" y2="400" stroke="#4A7C59" stroke-width="2.5"/>
+  <circle cx="335" cy="394" r="8" fill="#F5C6D0"/>
+  <!-- Pathway -->
+  <path d="M222 403 L200 445 L300 445 L278 403 Z" fill="#FDE8D8" stroke="#E8C987" stroke-width="1.5"/>
+
+  <!-- ======= COUPLE standing in front of house ======= -->
+  <!-- Barath body -->
+  <path d="M172 390 C172 368 182 358 196 355 C208 355 216 360 220 370 L220 445 L164 445 Z" fill="#3D2B3B"/>
+  <!-- Barath neck/head -->
+  <rect x="190" y="343" width="12" height="15" rx="5" fill="#E8B89A"/>
+  <ellipse cx="195" cy="328" rx="26" ry="29" fill="#E8B89A"/>
+  <ellipse cx="170" cy="330" rx="5" ry="8" fill="#DDA47E"/>
+  <!-- Barath hair -->
+  <path d="M169 322 C168 296 180 284 196 284 C214 284 220 300 218 322 C213 310 205 306 196 308 C186 310 179 306 173 316 Z" fill="#1C1008"/>
+  <!-- Barath glasses small -->
+  <rect x="182" y="320" width="14" height="11" rx="3" fill="none" stroke="#1C1008" stroke-width="2.5"/>
+  <rect x="199" y="320" width="14" height="11" rx="3" fill="none" stroke="#1C1008" stroke-width="2.5"/>
+  <line x1="196" y1="325" x2="199" y2="325" stroke="#1C1008" stroke-width="2.5"/>
+  <!-- Barath smile -->
+  <path d="M186 334 Q196 340 206 334" stroke="#A0614A" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Barath rosy cheeks -->
+  <ellipse cx="181" cy="334" rx="8" ry="5" fill="#FF9999" opacity="0.4"/>
+  <ellipse cx="209" cy="334" rx="8" ry="5" fill="#FF9999" opacity="0.4"/>
+
+  <!-- Pooja body -->
+  <path d="M220 390 C220 365 234 355 250 352 C266 352 278 362 280 375 L280 445 L216 445 Z" fill="#E896A9"/>
+  <circle cx="234" cy="380" r="3.5" fill="#FFFDF9" opacity="0.6"/>
+  <circle cx="255" cy="400" r="3" fill="#FFFDF9" opacity="0.5"/>
+  <!-- Pooja neck/head -->
+  <rect x="244" y="339" width="12" height="15" rx="5" fill="#DDA47E"/>
+  <ellipse cx="250" cy="325" rx="25" ry="28" fill="#DDA47E"/>
+  <ellipse cx="276" cy="328" rx="5" ry="7" fill="#CC9470"/>
+  <!-- Pooja long dark hair -->
+  <path d="M225 318 C223 293 234 280 250 280 C266 280 276 294 274 318 C268 304 260 300 250 302 C240 304 232 300 228 314 Z" fill="#0D0806"/>
+  <path d="M226 318 C220 330 218 355 220 385 C224 383 226 364 228 344 C226 330 225 322 226 318 Z" fill="#0D0806"/>
+  <path d="M275 318 C281 330 283 355 281 385 C277 383 275 364 273 344 C274 330 275 322 274 318 Z" fill="#0D0806"/>
+  <!-- Pooja eyes and smile -->
+  <circle cx="243" cy="321" r="4" fill="#1C1008"/>
+  <circle cx="257" cy="321" r="4" fill="#1C1008"/>
+  <circle cx="244.5" cy="319.5" r="1.2" fill="white"/>
+  <circle cx="258.5" cy="319.5" r="1.2" fill="white"/>
+  <path d="M243 330 Q250 336 257 330" stroke="#A05060" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="236" cy="328" rx="8" ry="5" fill="#FF9999" opacity="0.45"/>
+  <ellipse cx="263" cy="328" rx="8" ry="5" fill="#FF9999" opacity="0.45"/>
+
+  <!-- Arms intertwined / hugging posture -->
+  <path d="M218 388 C215 372 208 368 204 372 L206 388" fill="#3D2B3B"/>
+  <path d="M220 395 C222 378 230 372 238 376 L236 395" fill="#E896A9"/>
+
+  <!-- Big heart above them -->
+  <path d="M234 276 C234 266 242 260 250 265 C258 260 266 266 266 276 C266 289 250 298 250 298 C250 298 234 289 234 276 Z" fill="#C77D91" filter="url(#homeShadow)"/>
+  <!-- Stars/sparkles around home -->
+  <path d="M120 160 L122 154 L124 160 L130 162 L124 164 L122 170 L120 164 L114 162 Z" fill="#E8C987"/>
+  <path d="M378 148 L380 142 L382 148 L388 150 L382 152 L380 158 L378 152 L372 150 Z" fill="#F5C6D0"/>
+  <!-- Caption -->
+  <rect x="130" y="458" width="240" height="26" rx="13" fill="#C77D91" opacity="0.88"/>
+  <text x="250" y="476" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#FFFDF9" font-style="italic">building a little life together ♡</text>
+</svg>

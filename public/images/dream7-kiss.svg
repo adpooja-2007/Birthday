@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="kissBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="55%" stop-color="#FDECEF"/>
+      <stop offset="100%" stop-color="#F5C6D0"/>
+    </radialGradient>
+    <radialGradient id="glowCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFEEF3" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FDECEF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="kissGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="#C77D91" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Dreamy Blush Background Circle -->
+  <g filter="url(#softShadow)">
+    <circle cx="250" cy="250" r="235" fill="url(#kissBg)" stroke="#F5C6D0" stroke-width="3"/>
+    <circle cx="250" cy="250" r="225" fill="none" stroke="#E8C987" stroke-width="1.5" stroke-dasharray="5 4"/>
+  </g>
+
+  <!-- Central Glow Aura -->
+  <circle cx="250" cy="240" r="160" fill="url(#glowCenter)"/>
+
+  <!-- Floating Hearts Background -->
+  <g opacity="0.5">
+    <path d="M76 110 C76 106 79 104 81 106 C83 104 86 106 86 110 C86 115 81 118 81 118 S76 115 76 110 Z" fill="#F5C6D0"/>
+    <path d="M420 88 C420 83 424 81 427 84 C430 81 434 83 434 88 C434 94 427 98 427 98 S420 94 420 88 Z" fill="#E8C987"/>
+    <path d="M100 360 C100 355 103 353 106 356 C109 353 112 355 112 360 C112 366 106 370 106 370 S100 366 100 360 Z" fill="#C77D91" opacity="0.7"/>
+    <path d="M400 380 C400 375 403 373 406 376 C409 373 412 375 412 380 C412 386 406 390 406 390 S400 386 400 380 Z" fill="#F5C6D0"/>
+    <path d="M58 230 C58 226 61 224 63 226 C65 224 68 226 68 230 C68 235 63 238 63 238 S58 235 58 230 Z" fill="#E8C987"/>
+    <path d="M438 280 C438 276 441 274 443 276 C445 274 448 276 448 280 C448 285 443 288 443 288 S438 285 438 280 Z" fill="#F5C6D0"/>
+  </g>
+
+  <!-- Gold sparkles -->
+  <g fill="#E8C987">
+    <path d="M82 168 L84 162 L86 168 L92 170 L86 172 L84 178 L82 172 L76 170 Z"/>
+    <path d="M418 155 L420 149 L422 155 L428 157 L422 159 L420 165 L418 159 L412 157 Z"/>
+    <path d="M140 435 L142 430 L144 435 L150 437 L144 439 L142 445 L140 439 L134 437 Z" opacity="0.7"/>
+    <path d="M362 418 L364 413 L366 418 L372 420 L366 422 L364 428 L362 422 L356 420 Z" opacity="0.7"/>
+  </g>
+
+  <!-- ======= BARATH (right side, receiving the kiss) ======= -->
+  <!-- Body casual maroon shirt -->
+  <path d="M262 345 C262 298 295 282 330 282 C348 282 362 290 370 308 L370 455 C370 460 254 460 254 455 Z" fill="#6B2D3A"/>
+  <!-- Collar line -->
+  <path d="M306 284 L330 310 L354 284" stroke="#FAF2E9" stroke-width="2.5" fill="none"/>
+  <!-- Neck -->
+  <rect x="321" y="261" width="17" height="24" rx="7" fill="#E8B89A"/>
+  <!-- Head / face - slightly tilted right (blushing!) -->
+  <ellipse cx="332" cy="228" rx="40" ry="43" fill="#E8B89A"/>
+  <ellipse cx="372" cy="232" rx="7" ry="11" fill="#DDA47E"/>
+  <!-- Voluminous dark hair -->
+  <path d="M291 218 C289 172 308 150 335 150 C365 150 374 175 370 218 C362 198 347 192 332 196 C316 200 305 195 295 208 Z" fill="#1C1008"/>
+  <path d="M308 162 C320 153 346 152 360 158 C350 165 336 163 322 172 Z" fill="#2D1A0E"/>
+  <!-- Big rectangular glasses -->
+  <rect x="305" y="214" width="24" height="18" rx="4.5" fill="rgba(255,255,255,0.1)" stroke="#1C1008" stroke-width="3.5"/>
+  <rect x="335" y="214" width="24" height="18" rx="4.5" fill="rgba(255,255,255,0.1)" stroke="#1C1008" stroke-width="3.5"/>
+  <line x1="329" y1="223" x2="335" y2="223" stroke="#1C1008" stroke-width="3.5"/>
+  <line x1="298" y1="221" x2="305" y2="221" stroke="#1C1008" stroke-width="3.5"/>
+  <!-- Eyes - wide with surprise/joy (big sparkly eyes) -->
+  <ellipse cx="317" cy="224" rx="6" ry="6.5" fill="white"/>
+  <circle cx="318" cy="225" r="4" fill="#1C1008"/>
+  <circle cx="319.5" cy="223" r="1.5" fill="white"/>
+  <ellipse cx="347" cy="224" rx="6" ry="6.5" fill="white"/>
+  <circle cx="348" cy="225" r="4" fill="#1C1008"/>
+  <circle cx="349.5" cy="223" r="1.5" fill="white"/>
+  <!-- Light beard -->
+  <path d="M300 244 C300 260 310 268 330 270 C350 268 360 260 360 244 C356 250 347 254 332 256 C317 254 308 250 300 244 Z" fill="#2D1A0E" opacity="0.65"/>
+  <!-- Barath's big blushing red cheeks (he's surprised!) -->
+  <ellipse cx="304" cy="242" rx="16" ry="10" fill="#FF6B6B" opacity="0.55"/>
+  <ellipse cx="358" cy="242" rx="16" ry="10" fill="#FF6B6B" opacity="0.55"/>
+  <!-- Dopey surprised smile -->
+  <path d="M316 254 Q332 265 348 254" stroke="#A0614A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Nose -->
+  <ellipse cx="330" cy="237" rx="4.5" ry="5" fill="#D49878"/>
+
+  <!-- ======= POOJA (left, leaning in to kiss his cheek) ======= -->
+  <!-- Body - romantic pink top -->
+  <path d="M128 360 C128 312 162 295 200 295 C218 295 232 303 242 320 L242 455 C242 460 120 460 120 455 Z" fill="#D4819A"/>
+  <!-- Floral pattern -->
+  <circle cx="148" cy="345" r="5" fill="#FFFDF9" opacity="0.55"/>
+  <circle cx="170" cy="378" r="4" fill="#FFFDF9" opacity="0.45"/>
+  <circle cx="195" cy="360" r="5" fill="#FFFDF9" opacity="0.55"/>
+  <!-- Neck -->
+  <rect x="192" y="272" width="15" height="25" rx="7" fill="#DDA47E"/>
+  <!-- Head (tilted left, leaning forward toward Barath's cheek) -->
+  <ellipse cx="199" cy="234" rx="37" ry="41" fill="#DDA47E"/>
+  <ellipse cx="162" cy="237" rx="6" ry="10" fill="#CC9470"/>
+  <!-- Long wavy BLACK hair cascading down -->
+  <path d="M162 222 C160 178 178 156 200 156 C222 156 238 178 238 222 C231 203 218 198 206 201 C192 205 180 200 170 214 Z" fill="#0D0806"/>
+  <!-- Long hair flowing down sides and back -->
+  <path d="M162 222 C154 244 148 282 150 335 C156 332 160 312 163 290 C161 268 160 244 163 224 Z" fill="#0D0806"/>
+  <path d="M238 222 C246 244 250 278 246 325 C240 322 238 304 236 282 C237 260 237 240 236 222 Z" fill="#0D0806"/>
+  <!-- Hair wavy texture -->
+  <path d="M156 262 Q160 275 156 288" stroke="#1C1008" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M244 262 Q240 275 244 288" stroke="#1C1008" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Earring -->
+  <circle cx="162" cy="240" r="4.5" fill="#E8C987" stroke="#C99E4B" stroke-width="1.5"/>
+  <circle cx="238" cy="240" r="4.5" fill="#E8C987" stroke="#C99E4B" stroke-width="1.5"/>
+  <!-- Eyes - closed in loving expression (crescent/happy closed eyes) -->
+  <path d="M186 218 Q198 211 210 218" stroke="#0D0806" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M185 218 Q186 214 189 218" stroke="#0D0806" stroke-width="1.5" fill="none"/>
+  <path d="M207 218 Q210 214 211 218" stroke="#0D0806" stroke-width="1.5" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="199" cy="232" rx="4" ry="4.5" fill="#CC9470"/>
+  <!-- Lips puckered up for a kiss (pooja leaning in) -->
+  <path d="M189 244 Q199 250 209 244" stroke="#C77D91" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="199" cy="248" rx="10" ry="6" fill="#E896A9" opacity="0.7"/>
+  <!-- Rosy cheeks glowing from emotion -->
+  <ellipse cx="180" cy="244" rx="14" ry="9" fill="#FF6B8A" opacity="0.5"/>
+  <ellipse cx="218" cy="244" rx="14" ry="9" fill="#FF6B8A" opacity="0.5"/>
+
+  <!-- Hands: Pooja gently cupping Barath's face -->
+  <!-- Left hand -->
+  <ellipse cx="296" cy="264" rx="18" ry="13" fill="#DDA47E"/>
+  <path d="M280 260 C278 252 286 248 292 254 C296 250 302 252 306 258 C310 254 316 256 318 262" stroke="#CC9470" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Right hand (slightly behind) -->
+  <ellipse cx="366" cy="258" rx="16" ry="12" fill="#DDA47E" opacity="0.85"/>
+
+  <!-- Kiss sparkle on his cheek -->
+  <g filter="url(#kissGlow)">
+    <circle cx="302" cy="250" r="12" fill="#FFEEF3" opacity="0.8"/>
+    <path d="M296 248 C296 244 298 242 301 244 C304 242 306 244 306 248 C306 253 301 256 301 256 S296 253 296 248 Z" fill="#FF6B8A"/>
+    <path d="M290 244 L291 241 L292 244 L295 245 L292 246 L291 249 L290 246 L287 245 Z" fill="#E8C987"/>
+    <path d="M308 240 L309 237 L310 240 L313 241 L310 242 L309 245 L308 242 L305 241 Z" fill="#E8C987"/>
+  </g>
+
+  <!-- Big central heart between faces -->
+  <g filter="url(#kissGlow)">
+    <path d="M238 195 C238 185 245 180 250 185 C255 180 262 185 262 195 C262 207 250 215 250 215 C250 215 238 207 238 195 Z" fill="#C77D91"/>
+  </g>
+
+  <!-- Tiny hearts floating upward -->
+  <g fill="#F5C6D0" opacity="0.7">
+    <path d="M148 180 C148 177 150 176 152 177 C154 176 156 177 156 180 C156 183 152 185 152 185 S148 183 148 180 Z"/>
+    <path d="M355 140 C355 137 357 136 359 137 C361 136 363 137 363 140 C363 143 359 145 359 145 S355 143 355 140 Z"/>
+    <path d="M176 135 C176 133 178 132 179 133 C180 132 182 133 182 135 C182 137 179 138.5 179 138.5 S176 137 176 135 Z"/>
+    <path d="M326 125 C326 123 328 122 329 123 C330 122 332 123 332 125 C332 127 329 128.5 329 128.5 S326 127 326 125 Z"/>
+  </g>
+
+  <!-- Romantic caption -->
+  <rect x="122" y="468" width="256" height="26" rx="13" fill="#C77D91" opacity="0.88"/>
+  <text x="250" y="486" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#FFFDF9" font-style="italic">the kiss I've been saving for you ♡</text>
+</svg>

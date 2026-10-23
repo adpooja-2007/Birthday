@@ -1,0 +1,587 @@
+/* ===================================================================
+   A LITTLE UNIVERSE, JUST FOR YOU — ROMANTIC SCRAPBOOK DESIGN SYSTEM
+   Special Birthday Edition for Barath Kumar ♡
+   =================================================================== */
+
+/* Google Fonts: Caveat & Dancing Script (cursive fallbacks for Lucy Said Ok),
+   Cormorant Garamond (classic romantic serif), DM Sans (clean readable body) */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..600&display=swap');
+
+/* Lucy Said Ok Personal Use font-face registration */
+@font-face {
+  font-family: 'Lucy Said Ok Personal Use';
+  src: url('/fonts/LucySaidOkPersonalUse.woff2') format('woff2'),
+       url('/fonts/LucySaidOkPersonalUse.ttf') format('truetype'),
+       url('/fonts/Lucy Said Ok Personal Use.ttf') format('truetype'),
+       url('/fonts/Lucy Said Ok Personal Use.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* =========================================================
+     COORDINATED SCRAPBOOK COLOR PALETTE:
+     Warm cream, blush pink, muted lavender, deep burgundy,
+     warm brown, soft sage green, and gentle golden accents.
+     ========================================================= */
+  
+  /* Paper & Parchment (Warm cream & ivory paper) */
+  --cream: #FFFBF5;
+  --cream-paper: #FFFDF9;
+  --cream-card: #FAF4EB;
+  --cream-dark: #F3E7D7;
+  --ivory-wash: #FFF9F0;
+
+  /* Blush Pink */
+  --blush: #F7D2DA;
+  --blush-light: #FDF2F4;
+  --blush-border: #F0B8C4;
+  --rose: #C77D91;
+  --rose-dark: #A85C70;
+  --rose-light: #F3CAD4;
+
+  /* Muted Lavender */
+  --lavender: #E4E0F5;
+  --lavender-soft: #F4F1FB;
+  --lavender-dark: #9D92D8;
+  --lavender-wash: #EFEAF9;
+
+  /* Deep Burgundy */
+  --burgundy: #5A1D28;
+  --burgundy-dark: #3F131B;
+  --burgundy-light: #7E2B3A;
+
+  /* Warm Brown */
+  --brown-warm: #4D3227;
+  --brown-dark: #38241C;
+  --brown-muted: #6E5347;
+
+  /* Soft Sage Green */
+  --sage: #8DA894;
+  --sage-light: #EBF2ED;
+  --sage-dark: #5B7A63;
+  --sage-border: #BCD0C2;
+
+  /* Gentle Golden Accents */
+  --gold: #E6CA85;
+  --gold-dark: #BFA052;
+  --gold-soft: #FCF6E8;
+  --gold-glow: rgba(230, 202, 133, 0.45);
+
+  /* High Contrast Deep Plum / Text */
+  --plum: #2D1426;
+  --plum-dark: #1E0C1A;
+  --plum-muted: #4B2B44;
+  --plum-light: #7E5F77;
+
+  /* =========================================================
+     TYPOGRAPHY
+     ========================================================= */
+  /* Romantic handwritten font with graceful cursive fallbacks */
+  --font-romantic: 'Lucy Said Ok Personal Use', 'Caveat', 'Dancing Script', cursive;
+  --font-hand: 'Lucy Said Ok Personal Use', 'Caveat', 'Dancing Script', cursive;
+  
+  /* Highly legible body typography */
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+
+  /* =========================================================
+     SHADOWS & ELEVATION
+     ========================================================= */
+  --shadow-sm: 0 2px 8px rgba(77, 50, 39, 0.05);
+  --shadow-paper: 0 4px 20px -2px rgba(90, 29, 40, 0.06), 0 2px 6px rgba(77, 50, 39, 0.04);
+  --shadow-paper-hover: 0 12px 32px -4px rgba(90, 29, 40, 0.12), 0 4px 12px rgba(77, 50, 39, 0.06);
+  --shadow-polaroid: 0 8px 26px -4px rgba(77, 50, 39, 0.12), 0 2px 6px rgba(90, 29, 40, 0.04);
+  --shadow-float: 0 20px 42px -10px rgba(90, 29, 40, 0.16);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-pill: 9999px;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--cream);
+  color: var(--plum);
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--cream);
+  color: var(--plum);
+  min-height: 100vh;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Delicate Handmade Linen / Paper Grain Texture Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   TYPOGRAPHY RULES
+   - Romantic headings with Lucy Said Ok Personal Use
+   - Clear, legible paragraphs and descriptions with DM Sans
+   ========================================================= */
+
+h1, h2, h3, h4, .font-romantic {
+  font-family: var(--font-romantic);
+  font-weight: 600;
+  color: var(--plum);
+  line-height: 1.2;
+}
+
+/* Main desktop headings target ~42-58px */
+h1 {
+  font-size: clamp(2.4rem, 5.5vw, 3.6rem);
+  font-weight: 700;
+  color: var(--plum);
+  letter-spacing: -0.01em;
+}
+
+/* Section headings target ~30-40px */
+h2, .section-header h2 {
+  font-family: var(--font-romantic) !important;
+  font-size: clamp(1.9rem, 3.8vw, 2.5rem);
+  font-weight: 700;
+  color: var(--plum);
+  line-height: 1.25;
+}
+
+/* Card headings target ~21-27px */
+h3, .card-title {
+  font-family: var(--font-romantic);
+  font-size: clamp(1.35rem, 2.2vw, 1.7rem);
+  font-weight: 600;
+  color: var(--plum);
+  line-height: 1.3;
+}
+
+/* Readable Body Text target ~16-18px with high contrast */
+p, .body-text {
+  font-family: var(--font-sans);
+  font-size: 1.05rem; /* ~17px */
+  color: var(--plum-dark);
+  line-height: 1.68;
+}
+
+@media (max-width: 640px) {
+  p, .body-text {
+    font-size: 1rem; /* 16px */
+    line-height: 1.62;
+  }
+}
+
+/* Short romantic handwritten notes */
+.romantic-note, .caption-handwritten {
+  font-family: var(--font-romantic);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--rose-dark);
+  line-height: 1.35;
+}
+
+/* =========================================================
+   GRAPHICAL SCRAPBOOK SECTION WATERCOLOR WASHES
+   Each section has a distinct, tasteful illustrated background
+   ========================================================= */
+
+/* 1. Hero: Warm cream sunrise wash with soft blush & gold glow */
+.scrapbook-wash-hero {
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(ellipse at 50% 15%, rgba(253, 241, 244, 0.95) 0%, rgba(255, 251, 245, 0.6) 55%, rgba(250, 244, 235, 0.95) 100%),
+    radial-gradient(circle at 12% 28%, rgba(247, 210, 218, 0.35) 0%, transparent 45%),
+    radial-gradient(circle at 88% 35%, rgba(230, 202, 133, 0.28) 0%, transparent 45%);
+}
+
+/* 2. Love Story Timeline: Ivory diary parchment wash with sage-green & blush whispers */
+.scrapbook-wash-timeline {
+  background-color: #FFFBF5;
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(235, 242, 237, 0.7) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 90%, rgba(253, 242, 244, 0.65) 0%, transparent 50%),
+    linear-gradient(180deg, #FFFDF9 0%, #FAF4EB 50%, #FFFBF5 100%);
+}
+
+/* 3. Our Little Forever: Golden honey & rose scrapbook paper wash */
+.scrapbook-wash-forever {
+  background-color: #FFF8F0;
+  background-image:
+    radial-gradient(circle at 50% 8%, rgba(252, 246, 232, 0.85) 0%, transparent 55%),
+    radial-gradient(circle at 92% 35%, rgba(247, 210, 218, 0.4) 0%, transparent 45%),
+    radial-gradient(circle at 8% 65%, rgba(230, 202, 133, 0.25) 0%, transparent 45%),
+    linear-gradient(180deg, #FFF9F2 0%, #FAF3EA 100%);
+}
+
+/* 4. Intimate Moments: Twilight muted lavender wash with calming diary feel */
+.scrapbook-wash-intimate {
+  background-color: #FAF7FD;
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(228, 224, 245, 0.6) 0%, transparent 60%),
+    radial-gradient(circle at 10% 40%, rgba(244, 241, 251, 0.8) 0%, transparent 50%),
+    radial-gradient(circle at 90% 70%, rgba(253, 241, 244, 0.5) 0%, transparent 50%),
+    linear-gradient(180deg, #FBF8FD 0%, #F5F1FA 50%, #FAF6FC 100%);
+}
+
+/* 5. Memory Gallery: Warm photographic album wash */
+.scrapbook-wash-gallery {
+  background-color: #FFFDF9;
+  background-image:
+    radial-gradient(circle at 25% 15%, rgba(247, 210, 218, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 75% 85%, rgba(235, 242, 237, 0.4) 0%, transparent 40%),
+    linear-gradient(180deg, #FFFDF9 0%, #FAF4EB 100%);
+}
+
+/* 6. Open When Letters: Stationery desk parchment wash */
+.scrapbook-wash-letters {
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(ellipse at 50% 50%, rgba(255, 253, 249, 0.9) 0%, rgba(250, 244, 235, 0.85) 100%);
+}
+
+/* 7. Birthday Cake: Celebratory warm candle-glow radial gradient */
+.scrapbook-wash-cake {
+  background-color: #FFFDF9;
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(252, 246, 232, 0.95) 0%, rgba(253, 241, 244, 0.4) 60%, #FFFDF9 100%);
+}
+
+/* 8. Final Letter: Timeless love-letter stationery with warm burgundy undertone */
+.scrapbook-wash-letter {
+  background-color: #FFF9F2;
+  background-image:
+    radial-gradient(ellipse at 50% 20%, rgba(255, 253, 249, 0.95) 0%, rgba(250, 242, 232, 0.7) 70%, #FAF1E4 100%);
+}
+
+/* =========================================================
+   SCRAPBOOK DECORATIVE ELEMENTS:
+   Paper cards, washi tapes, postage stamps, polaroid frames
+   ========================================================= */
+
+.scrapbook-card {
+  background-color: var(--cream-paper);
+  border: 1.5px solid var(--blush-border);
+  box-shadow: var(--shadow-paper);
+  border-radius: var(--radius-md);
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.scrapbook-card:hover {
+  box-shadow: var(--shadow-paper-hover);
+}
+
+/* Fine double-line decorative border for letters & highlighted cards */
+.scrapbook-double-border {
+  border: 1.5px solid var(--blush-border);
+  outline: 1px dashed rgba(230, 202, 133, 0.6);
+  outline-offset: -6px;
+}
+
+/* Caricature Illustrated Framing Container */
+.caricature-scrapbook-frame {
+  background-color: #FAF4EB;
+  border-radius: 20px;
+  border: 2px solid var(--blush-border);
+  box-shadow: var(--shadow-polaroid);
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justifyContent: center;
+}
+
+.caricature-scrapbook-frame img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain !important;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Washi Tape Accents */
+.washi-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1.5deg);
+  width: 90px;
+  height: 24px;
+  background: rgba(247, 210, 218, 0.85);
+  border-left: 3px dashed rgba(199, 125, 145, 0.5);
+  border-right: 3px dashed rgba(199, 125, 145, 0.5);
+  box-shadow: 0 2px 4px rgba(77, 50, 39, 0.08);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.washi-tape-gold {
+  background: rgba(230, 202, 133, 0.82);
+  border-left-color: rgba(191, 160, 82, 0.5);
+  border-right-color: rgba(191, 160, 82, 0.5);
+}
+
+.washi-tape-sage {
+  background: rgba(219, 233, 222, 0.88);
+  border-left-color: rgba(141, 168, 148, 0.6);
+  border-right-color: rgba(141, 168, 148, 0.6);
+}
+
+.washi-tape-lavender {
+  background: rgba(228, 224, 245, 0.85);
+  border-left-color: rgba(157, 146, 216, 0.5);
+  border-right-color: rgba(157, 146, 216, 0.5);
+}
+
+/* Postage Stamp Border Effect */
+.postage-stamp {
+  position: relative;
+  background-color: var(--cream-paper);
+  border: 4px solid var(--cream-dark);
+  box-shadow: var(--shadow-sm);
+  padding: 8px;
+}
+
+/* Polaroid Photo Styling */
+.polaroid-frame {
+  background: #FFFFFF;
+  padding: 14px 14px 44px 14px;
+  box-shadow: var(--shadow-polaroid);
+  border: 1px solid rgba(77, 50, 39, 0.06);
+  border-radius: 4px;
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.polaroid-frame:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--shadow-float);
+}
+
+.polaroid-frame .caption {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  right: 14px;
+  font-family: var(--font-romantic);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--plum);
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Wax Heart Seal Button */
+.wax-seal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #E896A9 0%, #C77D91 60%, #5A1D28 100%);
+  color: #FFFFFF;
+  font-family: var(--font-romantic);
+  font-size: 1.45rem;
+  font-weight: 600;
+  padding: 14px 34px;
+  border-radius: var(--radius-pill);
+  border: 2px solid #FFF8F0;
+  box-shadow: 0 6px 20px rgba(199, 125, 145, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  text-decoration: none;
+}
+
+.wax-seal-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(199, 125, 145, 0.55), inset 0 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.wax-seal-btn:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Secondary Romantic Button */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: transparent;
+  color: var(--rose-dark);
+  font-family: var(--font-romantic);
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: var(--radius-pill);
+  border: 1.5px dashed var(--rose);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--blush-light);
+  border-style: solid;
+  transform: translateY(-1px);
+}
+
+/* Section Header Shared */
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px auto;
+  position: relative;
+}
+
+.section-header .section-tag {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--rose-dark);
+  background-color: var(--blush-light);
+  padding: 6px 18px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--blush-border);
+  margin-bottom: 14px;
+}
+
+.section-header p {
+  font-size: clamp(1.05rem, 2.2vw, 1.18rem);
+  color: var(--plum-dark);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* Subtle hand-drawn botanical corner SVGs for scrapbook sections */
+.scrapbook-botanical-corner {
+  position: absolute;
+  pointer-events: none;
+  width: 90px;
+  height: 90px;
+  opacity: 0.45;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .scrapbook-botanical-corner {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes gentleGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(230, 202, 133, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 18px rgba(230, 202, 133, 0.8));
+  }
+}
+
+@keyframes candleFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+  }
+  25% {
+    transform: scale(1.08, 0.96) rotate(1.5deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.95, 1.05) rotate(-0.5deg);
+    opacity: 0.88;
+  }
+  75% {
+    transform: scale(1.04, 1) rotate(1deg);
+    opacity: 0.98;
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.candle-flame {
+  transform-origin: center bottom;
+  animation: candleFlicker 1.8s ease-in-out infinite alternate;
+}
+
+.candle-flame-glow {
+  transform-origin: center center;
+  animation: candleFlicker 2.4s ease-in-out infinite alternate;
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,17 @@
+LUCY SAID OK PERSONAL USE FONT INSTRUCTIONS
+============================================
+
+To use the authentic "Lucy Said Ok Personal Use" font:
+1. Download "Lucy Said Ok Personal Use.ttf" or "Lucy Said Ok Personal Use.otf" (or woff/woff2).
+2. Place the font file directly in this folder:
+   c:\Users\Pooja Dhanasekar\OneDrive\Desktop\Birthday\public\fonts\
+
+Supported filenames (already configured in index.css):
+- Lucy Said Ok Personal Use.ttf
+- Lucy Said Ok Personal Use.otf
+- LucySaidOkPersonalUse.ttf
+- LucySaidOkPersonalUse.woff2
+- LucySaidOkPersonalUse.woff
+
+As soon as you place the file here, it will automatically load for all romantic headings, chapter titles, dream titles, envelope titles, and notes!
+In the meantime, the website uses a graceful cursive fallback ('Caveat', 'Dancing Script', and 'Cormorant Garamond').

@@ -1,0 +1,6 @@
+PLACE "LOVER" AUDIO FILE HERE:
+====================================
+File name: lover.mp3 (or lover.m4a / lover.wav)
+Location: public/audio/lover.mp3
+
+Once placed here, "Lover" by Taylor Swift will automatically be loaded and played as the background music for Barath Kumar's birthday website!

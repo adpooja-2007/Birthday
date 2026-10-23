@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="babyBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="60%" stop-color="#FFF5F8"/>
+      <stop offset="100%" stop-color="#FDECEF"/>
+    </radialGradient>
+    <filter id="babyShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="9" flood-color="#F5C6D0" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <!-- Circle frame -->
+  <g filter="url(#babyShadow)">
+    <circle cx="250" cy="250" r="235" fill="url(#babyBg)" stroke="#F5C6D0" stroke-width="3"/>
+    <circle cx="250" cy="250" r="225" fill="none" stroke="#E8C987" stroke-width="1.5" stroke-dasharray="5 4"/>
+  </g>
+
+  <!-- Stars and sparkles -->
+  <g fill="#E8C987" opacity="0.7">
+    <path d="M80 130 L82 124 L84 130 L90 132 L84 134 L82 140 L80 134 L74 132 Z"/>
+    <path d="M415 120 L417 114 L419 120 L425 122 L419 124 L417 130 L415 124 L409 122 Z"/>
+    <path d="M100 380 L102 375 L104 380 L110 382 L104 384 L102 390 L100 384 L94 382 Z" opacity="0.5"/>
+  </g>
+
+  <!-- Big Teddy bear center -->
+  <!-- Ears -->
+  <circle cx="184" cy="155" r="34" fill="#FAF2E9" stroke="#C77D91" stroke-width="3"/>
+  <circle cx="184" cy="155" r="20" fill="#F5C6D0"/>
+  <circle cx="316" cy="155" r="34" fill="#FAF2E9" stroke="#C77D91" stroke-width="3"/>
+  <circle cx="316" cy="155" r="20" fill="#F5C6D0"/>
+  <!-- Main head -->
+  <circle cx="250" cy="210" r="82" fill="#FFFDF9" stroke="#C77D91" stroke-width="3.5"/>
+  <!-- Muzzle area -->
+  <ellipse cx="250" cy="238" rx="38" ry="28" fill="#FAF2E9" stroke="#C77D91" stroke-width="2"/>
+  <!-- Bear nose -->
+  <ellipse cx="250" cy="228" rx="10" ry="8" fill="#3D2B3B"/>
+  <!-- Bear mouth -->
+  <path d="M250 236 L250 244" stroke="#3D2B3B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M235 246 Q250 255 265 246" stroke="#3D2B3B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Bear eyes (cute button eyes) -->
+  <circle cx="222" cy="200" r="12" fill="white" stroke="#3D2B3B" stroke-width="2"/>
+  <circle cx="226" cy="201" r="7" fill="#3D2B3B"/>
+  <circle cx="228" cy="199" r="2.5" fill="white"/>
+  <circle cx="278" cy="200" r="12" fill="white" stroke="#3D2B3B" stroke-width="2"/>
+  <circle cx="282" cy="201" r="7" fill="#3D2B3B"/>
+  <circle cx="284" cy="199" r="2.5" fill="white"/>
+  <!-- Blush circles on bear -->
+  <ellipse cx="208" cy="220" rx="14" ry="9" fill="#E8A0A0" opacity="0.5"/>
+  <ellipse cx="292" cy="220" rx="14" ry="9" fill="#E8A0A0" opacity="0.5"/>
+  <!-- Bear body -->
+  <ellipse cx="250" cy="360" rx="80" ry="70" fill="#FFFDF9" stroke="#C77D91" stroke-width="3"/>
+  <!-- Tummy button -->
+  <ellipse cx="250" cy="360" rx="48" ry="42" fill="#FAF2E9" stroke="#C77D91" stroke-width="2"/>
+  <!-- Cute bowtie -->
+  <path d="M222 298 L250 315 L222 332 Z" fill="#F5C6D0" stroke="#C77D91" stroke-width="2"/>
+  <path d="M278 298 L250 315 L278 332 Z" fill="#F5C6D0" stroke="#C77D91" stroke-width="2"/>
+  <circle cx="250" cy="315" r="10" fill="#E8C987" stroke="#C99E4B" stroke-width="1.5"/>
+  <!-- Arms -->
+  <ellipse cx="158" cy="345" rx="32" ry="22" fill="#FFFDF9" stroke="#C77D91" stroke-width="2.5" transform="rotate(-25 158 345)"/>
+  <ellipse cx="342" cy="345" rx="32" ry="22" fill="#FFFDF9" stroke="#C77D91" stroke-width="2.5" transform="rotate(25 342 345)"/>
+  <!-- Feet -->
+  <ellipse cx="206" cy="430" rx="30" ry="20" fill="#FFFDF9" stroke="#C77D91" stroke-width="2.5"/>
+  <ellipse cx="294" cy="430" rx="30" ry="20" fill="#FFFDF9" stroke="#C77D91" stroke-width="2.5"/>
+  <!-- Paw details -->
+  <circle cx="196" cy="432" r="5" fill="#F5C6D0"/>
+  <circle cx="206" cy="436" r="5" fill="#F5C6D0"/>
+  <circle cx="216" cy="432" r="5" fill="#F5C6D0"/>
+  <circle cx="284" cy="432" r="5" fill="#F5C6D0"/>
+  <circle cx="294" cy="436" r="5" fill="#F5C6D0"/>
+  <circle cx="304" cy="432" r="5" fill="#F5C6D0"/>
+  <!-- Bear holds a tiny heart -->
+  <path d="M238 370 C238 364 242 361 246 364 C250 361 254 364 254 370 C254 377 246 382 246 382 S238 377 238 370 Z" fill="#C77D91"/>
+
+  <!-- Caption -->
+  <rect x="124" y="464" width="252" height="26" rx="13" fill="#C77D91" opacity="0.88"/>
+  <text x="250" y="482" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#FFFDF9" font-style="italic">our little family dream someday ♡</text>
+</svg>
